@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {color: blue;}
+        p {color: chocolate;}
+        /* 선택자를 띄워쓰기 없이 연속 작성 */
+        /* 모든 조건을 만족하는 요소 선택 */
+        p.note {background: yellow;}
+        p.error {text-decoration: line-through;}
+        p.error.note {border: 5px dotted solid;}
+
+        /* class 가 note 이면서 error 인 element */
+        .note.error {border: 10px dotted black;}
+
+        h1.note.error {text-align: right;}
+    </style>
+</head>
+<body>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note">Cupiditate, nemo corporis?</h1>
+    <h1 class="note error">Soluta, debitis culpa.</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis voluptatum aperiam modi! Minus, ut illum? Commodi, facilis aspernatur voluptas dolorem provident molestiae architecto minus possimus tempore, sint magnam pariatur!</p>
+    <p class="note error">Nobis est minus doloribus debitis asperiores saepe fugiat porro soluta exercitationem. Qui, accusantium? Maiores voluptatum ullam dolorem molestiae consequatur reiciendis nulla animi unde numquam, provident suscipit earum? Debitis, illo ad.</p>
+    <p class="note error">Cupiditate numquam aliquid praesentium iure animi repellat illum, corrupti cumque, ea, officiis aut quis? Dolorum pariatur quasi odio nostrum, eaque, laboriosam accusantium perferendis voluptatum at exercitationem libero ducimus harum ab.</p>
+</body>
+</html>
