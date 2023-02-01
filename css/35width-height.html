@@ -2,6 +2,9 @@
 <html>
 <head>
     <style>
+        body{
+                height: 100vh;
+        }
         div {border: 5px solid;}
 
         div:nth-child(even) {
@@ -19,8 +22,11 @@
         /* vh = viewport heigh */
                 height: 50vh;} 
         #box4 { /* % : 부모요소 기준 */
+                /* 상단에 heigt: 100vh를 설정하지 않았을때는 */
+                /* height: 50%; 가 작동하지 않았음*/
                 width: 50%;
                 height: 50%;}
+
                 
 </style>
 <head>
