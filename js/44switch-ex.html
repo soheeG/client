@@ -12,24 +12,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    console.log(1);
-    console.log(2);
-    console.log(3);
+    let grade = prompt("학점을 입력해주세요", "A");
 
-    if (true) {
-        // code block
-        console.log("실행되거나 안되는 명령문들");
+    if (grade === "a" || grade === "A") {
+        console.log("90점 이상입니다.");
+    } else if (grade === "b" || grade === "B") {
+        console.log("80점 이상입니다.");
+    } else if (grade === "c" || grade === "C") {
+        console.log("70점 이상입니다.");
+    } else {
+        console.log("다시 입력해주세요.");
     }
-
-    if (false) {
-        // code block
-        console.log("실행되거나 안되는 명령문들");
-    }
-
-    console.log(4);
-
-    
-
     </script>
 </body>
 </html>

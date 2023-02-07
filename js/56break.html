@@ -12,46 +12,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 비교연산자의 피연산자가 string (문자열)
-    // 문자의 코드로 비교 (사전순서와 유사)
+    // 두개의 주사위를 던지고 나온 값을 출력
+    // 두 주사위의 값이 같을 때 까지 반복
 
-    let a = "java";
-    let b = "js";
-    
-    console.log(a === b); // false
-    console.log(a !== b); // true
-    console.log(a === "java"); // true
-    console.log(a === "JAVA"); // false
+    let dice1;
+    let dice2;
 
+    while (true) {
+        dice1 = parseInt(Math.random() * 6) + 1;
+        dice2 = parseInt(Math.random() * 6) + 1;
 
-    let c = "c";
-    let d = "d";
-    
-    console.log(c < d); // true
-    console.log(d < c); // false
+        console.log(dice1, dice2);
 
-    console.log(c < "can"); // true
-    console.log(c < "C"); // false (unicode 비교)
-
-    console.log("걫" < "걻"); // true
-
-    // 다른 타입과 비교 (두 항을 Number로 변환 후 비교)
-    // 가능한 피할 것!!!
-    console.log("3" < 4); // true
-    console.log("5" < 4); // false
-    console.log("11" < "2"); // true
-    console.log("11" < 2); // false
-
-    let e = "11";
-    let f = 2;
-
-    // 비교하기 전 타입 변환
-    let g = +e; // "11" ---> 11
-    console.log(g < f); // Number 끼리 비교
-
-    let h = "" + f; // 2 ---> "2"
-    console.log(e < h); // String 끼리 비교
-    
+        if (dice1 === dice2) {
+            break;
+        }
+    }
 
     </script>
 </body>

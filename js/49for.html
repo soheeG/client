@@ -12,46 +12,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 비교연산자의 피연산자가 string (문자열)
-    // 문자의 코드로 비교 (사전순서와 유사)
+    let a = 0; // 조건에 사용할 변수를 초기화
 
-    let a = "java";
-    let b = "js";
-    
-    console.log(a === b); // false
-    console.log(a !== b); // true
-    console.log(a === "java"); // true
-    console.log(a === "JAVA"); // false
+    while (a < 5) { // 조건
+        console.log("a", a);
 
+        a++; // 조건 변경하는 코드
+    }
 
-    let c = "c";
-    let d = "d";
-    
-    console.log(c < d); // true
-    console.log(d < c); // false
+    // for : 반복문
+    // for (초기화코드; 조건; 변경코드)
+    // while문을 한번에 작성
 
-    console.log(c < "can"); // true
-    console.log(c < "C"); // false (unicode 비교)
+    for (let b = 0; b < 5; b++) {
+        console.log("b", b);
 
-    console.log("걫" < "걻"); // true
+    }
 
-    // 다른 타입과 비교 (두 항을 Number로 변환 후 비교)
-    // 가능한 피할 것!!!
-    console.log("3" < 4); // true
-    console.log("5" < 4); // false
-    console.log("11" < "2"); // true
-    console.log("11" < 2); // false
-
-    let e = "11";
-    let f = 2;
-
-    // 비교하기 전 타입 변환
-    let g = +e; // "11" ---> 11
-    console.log(g < f); // Number 끼리 비교
-
-    let h = "" + f; // 2 ---> "2"
-    console.log(e < h); // String 끼리 비교
-    
+    for (let c = 5; c > 0, c--;) {
+        console.log("c", c);
+    }
 
     </script>
 </body>

@@ -12,24 +12,25 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    console.log(1);
-    console.log(2);
-    console.log(3);
+    let grade = prompt("학점을 입력하세요", "A");
 
-    if (true) {
-        // code block
-        console.log("실행되거나 안되는 명령문들");
+    switch (grade) {
+        case "a": // break를 의도적으로 생략할 수도 있음
+        case "A":
+            console.log("90점 이상입니다.");
+            break;
+        case "b":
+        case "B":grade
+            console.log("80점 이상입니다.");
+            break;
+        case "c":
+        case "C":
+            console.log("70점 이상입니다.");
+            break; 
+        default:
+            console.log("다시 입력해주세요.");
+            break; // 마지막 break;는 생략 가능
     }
-
-    if (false) {
-        // code block
-        console.log("실행되거나 안되는 명령문들");
-    }
-
-    console.log(4);
-
-    
-
     </script>
 </body>
 </html>

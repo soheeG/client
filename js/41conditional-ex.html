@@ -12,23 +12,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    console.log(1);
-    console.log(2);
-    console.log(3);
+    let num = +prompt("수를 입력해주세요", 0);
 
-    if (true) {
-        // code block
-        console.log("실행되거나 안되는 명령문들");
-    }
-
-    if (false) {
-        // code block
-        console.log("실행되거나 안되는 명령문들");
-    }
-
-    console.log(4);
-
-    
+    let message = ((num % 2) === 0) ? console.log("짝수입니다.") :  console.log("홀수입니다.");
+    // let message = (num % 2) ? console.log("홀수입니다.") :  console.log("짝수입니다."); ---> falsy, trethy 이용 --> 나머지가 0이면 falsy 이기 때문에 
+    console.log(message);
 
     </script>
 </body>

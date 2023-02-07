@@ -12,46 +12,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 비교연산자의 피연산자가 string (문자열)
-    // 문자의 코드로 비교 (사전순서와 유사)
+    // 변수의 scope
 
-    let a = "java";
-    let b = "js";
-    
-    console.log(a === b); // false
-    console.log(a !== b); // true
-    console.log(a === "java"); // true
-    console.log(a === "JAVA"); // false
+    // let, const 의 scope은 선언된 코드블럭 내에서만 사용 가능
+    // ---> 즉, 코드블럭 내에서만 사용 가능
 
+    let a = 5;
 
-    let c = "c";
-    let d = "d";
-    
-    console.log(c < d); // true
-    console.log(d < c); // false
+    if (true) {
+        let b = 10;
 
-    console.log(c < "can"); // true
-    console.log(c < "C"); // false (unicode 비교)
+        console.log("a", a);
+        console.log("b", b);
+    }
 
-    console.log("걫" < "걻"); // true
-
-    // 다른 타입과 비교 (두 항을 Number로 변환 후 비교)
-    // 가능한 피할 것!!!
-    console.log("3" < 4); // true
-    console.log("5" < 4); // false
-    console.log("11" < "2"); // true
-    console.log("11" < 2); // false
-
-    let e = "11";
-    let f = 2;
-
-    // 비교하기 전 타입 변환
-    let g = +e; // "11" ---> 11
-    console.log(g < f); // Number 끼리 비교
-
-    let h = "" + f; // 2 ---> "2"
-    console.log(e < h); // String 끼리 비교
-    
+    console.log("a", a); // 맨 위에서 선언되어 출력 O
+    console.log("b", b); // 선언된 코드블럭 밖에 위치하여 출력 X
 
     </script>
 </body>
