@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,40 +8,29 @@
     <style>
     </style>
 </head>
-
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react"
+    let a = ['java', 'css', 'spring', 'jsp']
 
-        // array : 여러 값을 저장한 자료형
+    for (let i = 0; i < a.length; i++) {
+        console.log(a[i]);
+    }
 
-        let f = ["java", "css", "html", "vue", "react"];
+    console.log("거꾸로 탐색");
 
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
-        }
+    console.log(3); // 4-1
+    console.log(2); // 4-2
+    console.log(1); // 4-3
+    console.log(0); // 4-4
 
-        // 여러 값을 타입 구분 없이 가질 수 있음
-        let g = [3, "css", true, 3.14, null, undefined]
-
-        // 빈 배열
-        let h = [];
-
-        // 코드가 길면 각 값 앞에서 새로운 줄 입력
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다",
-            "css는 html을 꾸며주는 코드다."
-        ];
-
-
+    for (let i = a.length-1; i >= 0; i--) {
+        console.log(a[i]);
+    }
+    for (let i = 1; i <= a.length; i++) {
+        console.log(a[a.length -i]);
+    }
     </script>
 </body>
-
 </html>
