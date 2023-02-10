@@ -10,30 +10,20 @@
 </head>
 <body>
 
-    <!-- button#button$*2{$버튼 클릭} -->
-    <button id="button1" onclick="btnClick();">1버튼 클릭</button>
-    <button id="button2">2버튼 클릭</button>
-    <button id="button3">3버튼 클릭</button>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // event 사용 방법
-    // 1)
-    function btnClick() {
-        console.log("1번 클릭 됨");
+    function $() {
+        return {
+            name: "son",
+            val: function () {
+                return "soccer";
+            }
+        }
     }
 
-    // 2)
-    let btn2 = document.querySelector("#button2");
-    btn2.onclick = function() {
-        console.log("2번 클릭 됨");
-    };
+    console.log($().name);
+    console.log($().val);
 
-    // 3)
-    let btn3 = document.querySelector("#button3");
-    btn3.addEventListener("click", function() {
-        console.log("3번 클릭 됨");
-    });
     </script>
 </body>
 </html>

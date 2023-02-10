@@ -9,36 +9,33 @@
     </style>
 </head>
 <body>
-    <!-- input#input1+ul#list1 -->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
+    <h1>
+        Lorem.
+    </h1>
 
-    <hr>
-    <!-- input#input2+u#list2 -->
-    <input type="text" id="input2">
-    <u id="list2"></u>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur architecto enim neque iusto natus ratione sint sunt commodi assumenda aspernatur sequi itaque pariatur vitae, voluptatum repellendus veritatis rem veniam ipsum.
+    </p>
+
+    <h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, fugit! Reprehenderit ad cupiditate dicta iusto. Hic non facilis illo pariatur perspiciatis animi assumenda iste deleniti atque, saepe, officiis voluptas ratione!
+    </h2>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // jquery 코드 사용
-    $("#input2").keyup(function(e) {
-        if(e.key === "Enter") {
-            $("#list2").append(`<li>${$(this).val()}</li>`);
-            $(this).val("");
-        }
-    });
-    
+        $("h1").on("click", function() {
+            console.log("h1 클릭됨");
+        });
 
-    // 보통의 자바스크립트 코드(vanila javascript)
-    document.querySelector("#input1").addEventListener("keyup", function(e) {
-        if (e.key === "Enter") {
-            let li = document.createElement("li");
-            li.textContent = this.value; // 여기서 this는 document.querySelector("#input1")
-            document.querySelector("#list1").append(li);
-            this.value = "";
-        }
-    });
+        $("p").on("click", function() {
+            console.log("p 클릭됨");
+        });
+
+        $("h2").on("click", function() {
+            console.log("h2 클릭됨");
+        });
+
     </script>
 </body>
 </html>
