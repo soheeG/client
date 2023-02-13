@@ -9,36 +9,22 @@
     </style>
 </head>
 <body>
-    <!-- h1#head$*3>lorem1^p#para*3>lorem -->
     <h1 id="head1">
         Lorem.
     </h1>
     <h1 id="head2">
-        Molestiae.
+        Mollitia.
     </h1>
     <h1 id="head3">
-        Consequatur.
+        Dicta?
     </h1>
-    <p id="para">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit quis ex quae. Dolores fugit officia, blanditiis distinctio iusto eum assumenda voluptates perferendis facilis ullam, culpa harum aliquid, quos ipsam.
-    </p>
-    <p id="para">
-        Voluptatibus rerum architecto, velit cum expedita accusamus nihil eveniet vel ullam ducimus commodi odio inventore laudantium voluptates dolorum consequatur dolor quo earum nemo nam maxime distinctio eaque odit. Quas, voluptatibus.
-    </p>
-    <p id="para">
-        Impedit, minima voluptates animi accusamus sed incidunt odio molestiae suscipit ad alias ut fugit tempore nemo dolore repudiandae! Quibusdam ex quos nihil aliquid voluptatem inventore repellendus enim dignissimos voluptates quia?
-    </p>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    $("#head1").hide(3000); // id가 head1인 특정 요소에 적용
-    $("p").hide(5000); // p 요소들에 모두 적용
-
-    let paras = document.querySelectorAll("p");
-    for(let i = 0; i < paras.length; i++) {
-        paras[i].style = {display: "none"}
-    }
+    $("#head1").after("<p>hello world</P>");
+    $("#head2").after($("<p>hi jquery</P>"));
+    $("#head3").after("<p>more </p><p>more...</p>");
     </script>
 </body>
 </html>
